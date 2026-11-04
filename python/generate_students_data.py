@@ -42,7 +42,9 @@ with conn:
         #last_name = fake.last_name()
         #date_of_birth = fake.date_of_birth(None, 16, 35)
         first_name = "John"
+        first_name = fake.first_name()
         last_name = "Doe"
+        last_name = fake.last_name()
         date_of_birth = date(2025, 3, 1)
         address = fake.address()[:100]
 
