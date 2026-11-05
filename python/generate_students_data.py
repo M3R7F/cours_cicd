@@ -3,6 +3,7 @@ This script creates a database, adds a "students" table to it, and inserts 50 re
 """
 
 import os
+#from datetime import date
 import psycopg2
 from faker import Faker
 
@@ -40,9 +41,9 @@ with conn:
         first_name = fake.first_name()
         last_name = fake.last_name()
         date_of_birth = fake.date_of_birth(None, 16, 35)
-        # first_name = "John"
-        # last_name = "Doe"
-        # date_of_birth = date(2025, 3, 1)
+        #first_name = "John"
+        #last_name = "Doe"
+        #date_of_birth = date(2025, 3, 1)
         address = fake.address()[:100]
 
         # student_id
